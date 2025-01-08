@@ -1,0 +1,166 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=Workbench&display=swap');
+@font-face {
+    font-family:"happy-times-italic";
+    src: url(assets/happy-times-NG_italic_master_web.woff);
+}
+@font-face {
+    font-family:"happy-times-regular";
+    src: url(assets/happy-times-NG_regular_master_web.woff);
+}
+
+body, html {
+    font-optical-sizing: auto;
+    line-height: 1.15;
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+}
+h1 {
+    font-family: "Workbench";
+    font-size: 24px;
+}
+p {
+    font-family: "Fragment Mono";
+    font-size: 14px;
+    letter-spacing: -0.2px;
+}
+a {
+    font-family: "happy-times-italic";
+    font-size: 14px;
+    color: currentColor;
+    padding: 4px 0;
+}
+header {
+    position: fixed;
+    top: 11px;
+    width: 96%;
+    height: fit-content;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 16px;
+    transition: color 0.1s;
+}
+header.amber {
+    color: #E3A326;
+}
+header.blue {
+    color: #DDE6FF;
+}
+header.red {
+    color: #FF0000;
+}
+div.progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 8px;
+    background-color: currentColor;
+    z-index: 1;
+    border-radius: 1px;
+    transition: background-color 0.1s;
+}
+div.progress.amber {
+    color: #E3A326;
+}
+div.progress.blue {
+    color: #DDE6FF;
+}
+div.progress.red {
+    color: #FF0000;
+}
+div.info {
+    width: 30%;
+    border-top: currentColor dashed 1px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+div.links {
+    width: auto;
+    border-top: currentColor dashed 1px;
+    border-bottom: currentColor dashed 1px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 8px;
+}
+div.title {
+    width: 30%;
+    border-top: currentColor dashed 1px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+div.numbers {
+    font-family: "Fragment Mono";
+    font-size: 14px;
+    border-top: currentColor dashed 1px;
+    border-bottom: currentColor dashed 1px;
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    padding: 8px 0;
+}
+
+section {
+    background-color: #fff;
+    min-height: 100vh;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.content {
+    position: relative;
+}
+div.content img {
+    position: relative;
+}
+div.square {
+    position: absolute;
+    top: 10%;
+    left: -20px;
+    width: 110%;
+    height: 60%;
+    border: #999 1px solid;
+}
+div.circle {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: #999 1px solid;
+    border-radius: 50%;
+}
+div.circle-2 {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    border: #999 1px solid;
+    border-radius: 50%;
+}
+section.s2 {
+    background-color: #191206;
+}
+section.s3 {
+    background-color: #12146F;
+}
+section.s4 {
+    background-color: #fcfcfc;
+}
